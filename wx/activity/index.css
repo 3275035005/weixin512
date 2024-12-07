@@ -1,0 +1,145 @@
+.search{
+	margin: 0 16rpx;
+}
+.tb{
+	position: fixed;
+    right: 0px;
+    bottom: 16%;
+    height: 96rpx;
+    width: 8rpx;
+    background: #00d4d4;
+    border: 0.5rpx #9a9a9a solid;
+    border-radius: 24rpx;
+}
+.ordertype{
+	margin: 8rpx 16rpx;
+}
+.ordertype .left{
+	float: left;
+	font-size: 20px;
+    line-height: 80rpx;
+    border-width: 2rpx;
+    border-color: #3c9cff;
+    width: 220rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 0 10rpx;
+    text-align: center;
+    border-radius: 40rpx;
+}
+.ordertype .right{
+	float: right;
+	font-size: 20px;
+    line-height: 80rpx;
+    border-width: 2rpx;
+    border-color: #3c9cff;
+    width: 220rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 0 10rpx;
+    text-align: center;
+    border-radius: 40rpx;
+}
+.leftbk{
+	color: #ffffff;
+	background-color: #00d4d4;
+}
+.rightbk{ 
+	color: #606266;
+	background-color: #f0f0f0;
+}
+.type{
+	clear: both;
+	margin-left: 12rpx;
+}
+/* 订单卡片 */
+.order{
+    clear: both;
+    margin: 0 auto;
+    /* padding-top: 20rpx; */
+}
+.order-card-left{
+	justify-content: space-between;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.order-card{
+	width: 340rpx;
+    box-shadow: 0 0 12rpx #85888d;
+    padding: 0rpx 0rpx 15rpx 0rpx;
+    margin: 24rpx 16rpx;
+    background-color: #ffffff;
+    border-radius: 12rpx;
+}
+.orderimg{
+	/* width: 276rpx; */
+    height: 200rpx;
+    margin: 0 auto;
+    border-radius: 12rpx;
+    overflow: hidden;
+}
+.img{
+	width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 12rpx;
+}
+.title{
+	margin-top: 12rpx;
+	font-size: 28rpx;
+	font-weight: bold;
+	/* margin-left: 32rpx; */
+	text-align: center;
+	white-space: nowrap; /*文本强制不换行 */
+	text-overflow:ellipsis;/* 文本溢出显示省略号 */
+	overflow:hidden;/*溢出的部分隐藏 */
+}
+.type{
+    margin-left: 32rpx;
+    color: #606266;
+    font-size: 28rpx;
+    margin-top: 10rpx;
+}
+.username{
+	position: relative;
+    font-size: 28rpx;
+    top: 30rpx;
+    left: 130rpx;
+    color: #606266;
+    width: 190rpx;
+	white-space: nowrap; /*文本强制不换行 */
+	text-overflow:ellipsis;/* 文本溢出显示省略号 */
+	overflow:hidden;/*溢出的部分隐藏 */
+}
+.date{
+	font-size: 22rpx;
+    color: #606266;
+    position: relative;
+    top: 36rpx;
+    left: 120rpx;
+    width: 200rpx;
+}
+.userimg{
+	position: relative;
+    top: -52rpx;
+	left: 28rpx;
+}
+.order-button{
+	position: relative;
+    top: -20rpx;
+    font-size: 12px;
+    line-height: 46rpx;
+    color: #FFFFFF;
+    background-color: #00d4d4;
+    border-width: 2rpx;
+    height: 46rpx;
+    width: 294rpx;
+    margin: 0 auto;
+    line-height: 46rpx;
+    text-align: center;
+    border-radius: 8rpx;
+}
+.loading{
+	clear: both;
+}

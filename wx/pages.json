@@ -1,0 +1,217 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	
+		{
+			"path": "index/index",
+			"style": {
+				"navigationBarTitleText": "校园墙小程序"
+			}
+		},
+		{
+			"path": "goods/goodsindex",
+			"style": {
+				"navigationBarTitleText": "二手市场"
+			}
+		},
+		{
+			"path": "activity/index", //校园活动
+			"style": {
+				"navigationBarTitleText": "校园活动"
+			}
+		},
+		{
+			"path": "pages/massage/user",
+			"style": {
+				"navigationBarTitleText": "个人主页"
+			}
+		},
+		{
+			"path": "shiwuzhaoling/swzlOrderInfo" //失物招领详情
+
+		},
+		{
+			"path": "shiwuzhaoling/swzlindex", //失物招领
+			"style": {
+				"navigationBarTitleText": "失物招领"
+			}
+		},
+		{
+			"path": "collect/index", //我的收藏
+			"style": {
+				"navigationBarTitleText": "我的活动收藏"
+			}
+		},
+		{
+			"path": "feedback/index", //我的反馈记录
+			"style": {
+				"navigationBarTitleText": "我的意见反馈"
+			}
+		},
+		{
+			"path": "see/see",
+			"style": {
+				"navigationBarTitleText": "聊天中心"
+			}
+		},
+
+
+		{
+			"path": "see/chatpage",
+			"style": {
+				"navigationBarTitleText": "聊天页面"
+			}
+		},
+		{
+			"path": "login/login",
+			"style": {
+				"navigationBarTitleText": "校园墙小程序"
+			}
+		},
+		{
+			"path": "register/index",
+			"style": {
+				"navigationBarTitleText": "校园墙注册"
+			}
+		},
+
+		{
+			"path": "shiwuzhaoling/swzlAddOrder"
+		},
+		{
+			"path": "activity/index_info", //校园活动详情
+			"style": {
+				"navigationBarTitleText": "校园活动详情"
+			}
+		},
+		{
+			"path": "userSet/userSetindex",
+			"style": {
+				"navigationBarTitleText": "修改信息"
+			}
+		},
+		{
+			"path": "multielement/index",
+			"style": {
+				"navigationBarTitleText": "投诉反馈"
+			}
+		},
+		{
+			"path": "goods/goodsInfo",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		
+		{
+			"path": "goods/goodsaddorder",
+			"style": {
+				"navigationBarTitleText": "增加商品"
+			}
+		},
+		{
+			"path": "index/indexClassify" //首页分类组件
+		},
+		{
+			"path": "index/indexPlacard" //首页公告组件 
+		},
+		{
+			"path": "index/indexCarousel" //首页轮播组件 
+		},
+		{
+			"path": "index/indexGoodContent" //首页优质内容组件 
+		}
+	],
+	"globalStyle": { //全局配置，窗口外观
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "校园墙小程序",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"enablePullDownRefresh": true //开启全局下拉刷新属性
+	},
+	"tabBar": {
+		"color": "#7d7e80",
+		"selectedColor": "#3c9cff",
+		"list": [{
+				"text": "首页",
+				"pagePath": "index/index",
+				"iconPath": "./static/img/首页.png",
+				"selectedIconPath": "./static/img/首页1.png"
+			},
+			{
+				"text": "聊天",
+				"pagePath": "see/see",
+				"iconPath": "./static/img/聊天.png",
+				"selectedIconPath": "./static/img/聊天1.png"
+			},
+			{
+				"text": "个人中心",
+				"pagePath": "pages/massage/user",
+				"iconPath": "./static/img/我的.png",
+				"selectedIconPath": "./static/img/我的1.png"
+			}
+		]
+	},
+	//分包
+	"subPackages": [
+		//我的订单
+		{
+			"root":"myorder",  //根目录下的分包文件路径
+			"name":"myorder",  //分包文件名字
+			//pages里面一样写法
+			"pages":[
+				{
+				"path": "order",
+				"style": {
+					"navigationBarTitleText": "我的订单页面"
+				}
+				}
+			]
+		},
+		//校园论坛
+		{
+			"root": "forum", //根目录下的分包文件路径
+			"name": "forum", //分包文件名字
+			//pages里面一样写法
+			"pages": [{
+					"path": "forumadd",
+					"style": {
+						"navigationBarTitleText": "发布论坛"
+					}
+				},
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "论坛大厅",
+						"navigationBarBackgroundColor": "#ffffff"
+					}
+				},
+				{
+					"path": "info",
+					"style": {
+						"navigationBarTitleText": "论坛详情"
+					}
+				}
+			]
+		},
+		//兼职
+		{
+			"root": "job", //根目录下的分包文件路径
+			"name": "job", //分包文件名字
+			//pages里面一样写法
+			"pages": [{
+					"path": "jobadd",
+					"style": {
+						"navigationBarTitleText": "发布兼职"
+					}
+				},
+				{
+					"path": "index",
+					"style": {
+						"navigationBarTitleText": "兼职大厅",
+						"navigationBarBackgroundColor": "#ffffff"
+					}
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@hyoga/uni-socket.io": "^3.0.4",
+    "ali-oss": "^6.17.1",
+    "bignumber.js": "^9.1.1",
+    "currency.js": "^2.0.4",
+    "install": "^0.13.0",
+    "vue-socket.io": "^3.0.10",
+    "weapp.socket.io": "^2.1.0"
+  }
+}
